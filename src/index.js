@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './App';
 import Game from './Game';
+import JobApp from './JobApp';
 
 const start = ReactDOM.createRoot(document.getElementById('start'));
 start.render(
@@ -18,6 +19,14 @@ game.render(
     <Game />
   </React.StrictMode>
 );
+
+const jobApp = ReactDOM.createRoot(document.getElementById('job'));
+jobApp.render(
+  <React.StrictMode>
+    <JobApp />
+  </React.StrictMode>
+);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
