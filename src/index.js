@@ -1,31 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
+import './css/index.css';
+import './css/bootstrap.min.css';
 import App from './App';
 import Game from './Game';
 import JobApp from './JobApp';
+import LoginApp from "./components/App";
 
-const start = ReactDOM.createRoot(document.getElementById('start'));
-start.render(
+// const start = ReactDOM.createRoot(document.getElementById('start'));
+// start.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+
+// const game = ReactDOM.createRoot(document.getElementById('game'));
+// game.render(
+//   <React.StrictMode>
+//     <Game />
+//   </React.StrictMode>
+// );
+
+// const jobApp = ReactDOM.createRoot(document.getElementById('job'));
+// jobApp.render(
+//   <React.StrictMode>
+//     <JobApp />
+//   </React.StrictMode>
+// );
+
+const loginApp = ReactDOM.createRoot(document.getElementById('login'));
+loginApp.render(
   <React.StrictMode>
-    <App />
+    <LoginApp />
   </React.StrictMode>
 );
 
-const game = ReactDOM.createRoot(document.getElementById('game'));
-game.render(
-  <React.StrictMode>
-    <Game />
-  </React.StrictMode>
-);
-
-const jobApp = ReactDOM.createRoot(document.getElementById('job'));
-jobApp.render(
-  <React.StrictMode>
-    <JobApp />
-  </React.StrictMode>
-);
 
 
 // If you want to start measuring performance in your app, pass a function

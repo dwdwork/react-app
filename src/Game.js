@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Game.css';
+import './css/Game.css';
 
 /**
  * Tic Tac Toe tutorial
