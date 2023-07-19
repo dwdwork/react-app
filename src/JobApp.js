@@ -1,6 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import './css/JobApp.css';
 
+const axios = require('axios');
+
+const options = {
+  method: 'GET',
+  url: 'https://api-american-football.p.rapidapi.com/players/statistics',
+  params: {
+    season: '2022',
+    id: '1'
+  },
+  headers: {
+    'X-RapidAPI-Key': 'da99e3fdc2msh758b1c38a83fdafp139db3jsn6ec58dd6378c',
+    'X-RapidAPI-Host': 'api-american-football.p.rapidapi.com'
+  }
+};
+
+try {
+	const response = await axios.request(options);
+	console.log(response.data.response[0].teams[0].groups[0].statistics);
+} catch (error) {
+	console.error(error);
+}
+
 // Users array
 const users = [
     {
