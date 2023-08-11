@@ -18,7 +18,7 @@ const options = {
 
 try {
 	const response = await axios.request(options);
-	console.log(response.data.response[0].teams[0].groups[0].statistics);
+	console.log(response.data.response[0].teams[0].groups[0]);
 } catch (error) {
 	console.error(error);
 }

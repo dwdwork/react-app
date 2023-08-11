@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './css/index.css';
 import './css/bootstrap.min.css';
-import App from './App';
-import Game from './Game';
-import JobApp from './JobApp';
-import LoginApp from "./components/App";
+import Root from "./Root";
+// import App from './App';
+// import Game from './Game';
+// import JobApp from './JobApp';
+// import LoginApp from "./components/App";
+
 
 // const start = ReactDOM.createRoot(document.getElementById('start'));
 // start.render(
@@ -30,13 +32,19 @@ import LoginApp from "./components/App";
 //   </React.StrictMode>
 // );
 
-const loginApp = ReactDOM.createRoot(document.getElementById('login'));
-loginApp.render(
+// const loginApp = ReactDOM.createRoot(document.getElementById('login'));
+// loginApp.render(
+//   <React.StrictMode>
+//     <LoginApp />
+//   </React.StrictMode>
+// );
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <LoginApp />
+    <Root />
   </React.StrictMode>
 );
-
 
 
 // If you want to start measuring performance in your app, pass a function
